@@ -11,6 +11,26 @@
 		C6168B232CA80D8400A50884 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B222CA80D8400A50884 /* ContentView.swift */; };
 		C6168B252CA80D8600A50884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6168B242CA80D8600A50884 /* Assets.xcassets */; };
 		C6168B282CA80D8600A50884 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6168B272CA80D8600A50884 /* Preview Assets.xcassets */; };
+		C6168B312CA80E1500A50884 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B302CA80E1500A50884 /* Auth */; };
+		C6168B332CA80E1500A50884 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B322CA80E1500A50884 /* Functions */; };
+		C6168B352CA80E1500A50884 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B342CA80E1500A50884 /* PostgREST */; };
+		C6168B372CA80E1500A50884 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B362CA80E1500A50884 /* Realtime */; };
+		C6168B392CA80E1500A50884 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B382CA80E1500A50884 /* Storage */; };
+		C6168B6A2CA97DA700A50884 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B692CA97DA700A50884 /* Book.swift */; };
+		C6168B6E2CA980DB00A50884 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B6D2CA980DB00A50884 /* Author.swift */; };
+		C6168B702CA989DF00A50884 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B6F2CA989DF00A50884 /* Secrets.swift */; };
+		C6168B722CA989F400A50884 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B712CA989F400A50884 /* AuthVM.swift */; };
+		C6168B752CA98A0C00A50884 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B742CA98A0C00A50884 /* Supabase */; };
+		C6168B7F2CA9AB5E00A50884 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B7E2CA9AB5E00A50884 /* BookListView.swift */; };
+		C6168B812CA9AC3800A50884 /* BookEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B802CA9AC3800A50884 /* BookEditView.swift */; };
+		C6168B832CA9B0D900A50884 /* AuthorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B822CA9B0D900A50884 /* AuthorsListView.swift */; };
+		C6168B852CA9B1A400A50884 /* AuthorEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B842CA9B1A400A50884 /* AuthorEditView.swift */; };
+		C6168B882CAC653400A50884 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B872CAC653400A50884 /* AuthView.swift */; };
+		C6168B902CAEBB8000A50884 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B8F2CAEBB8000A50884 /* SwiftyJSON */; };
+		C6168B922CB004E200A50884 /* Model protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B912CB004E200A50884 /* Model protocol.swift */; };
+		C6168B942CB018AA00A50884 /* ObservedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B932CB018AA00A50884 /* ObservedResults.swift */; };
+		C6168B972CB0213500A50884 /* HelpersLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B962CB0213500A50884 /* HelpersLibrary */; };
+		C6168B992CB148A200A50884 /* SubscriptionBroadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B982CB148A200A50884 /* SubscriptionBroadcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +40,23 @@
 		C6168B242CA80D8600A50884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6168B272CA80D8600A50884 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6168B292CA80D8600A50884 /* SupabaseDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SupabaseDemo.entitlements; sourceTree = "<group>"; };
+		C6168B692CA97DA700A50884 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C6168B6D2CA980DB00A50884 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		C6168B6F2CA989DF00A50884 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		C6168B712CA989F400A50884 /* AuthVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		C6168B762CA98B7B00A50884 /* BookVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookVM.swift; sourceTree = "<group>"; };
+		C6168B782CA9A41B00A50884 /* BooksVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksVM.swift; sourceTree = "<group>"; };
+		C6168B7A2CA9A90200A50884 /* AuthorsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorsVM.swift; sourceTree = "<group>"; };
+		C6168B7C2CA9A9BC00A50884 /* AuthorVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorVM.swift; sourceTree = "<group>"; };
+		C6168B7E2CA9AB5E00A50884 /* BookListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		C6168B802CA9AC3800A50884 /* BookEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookEditView.swift; sourceTree = "<group>"; };
+		C6168B822CA9B0D900A50884 /* AuthorsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorsListView.swift; sourceTree = "<group>"; };
+		C6168B842CA9B1A400A50884 /* AuthorEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorEditView.swift; sourceTree = "<group>"; };
+		C6168B872CAC653400A50884 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		C6168B8C2CAEB9C500A50884 /* SubscriptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionManager.swift; path = SupabaseDemo/Supasbase/SubscriptionManager.swift; sourceTree = SOURCE_ROOT; };
+		C6168B912CB004E200A50884 /* Model protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model protocol.swift"; sourceTree = "<group>"; };
+		C6168B932CB018AA00A50884 /* ObservedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedResults.swift; sourceTree = "<group>"; };
+		C6168B982CB148A200A50884 /* SubscriptionBroadcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionBroadcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +64,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6168B352CA80E1500A50884 /* PostgREST in Frameworks */,
+				C6168B902CAEBB8000A50884 /* SwiftyJSON in Frameworks */,
+				C6168B332CA80E1500A50884 /* Functions in Frameworks */,
+				C6168B752CA98A0C00A50884 /* Supabase in Frameworks */,
+				C6168B312CA80E1500A50884 /* Auth in Frameworks */,
+				C6168B392CA80E1500A50884 /* Storage in Frameworks */,
+				C6168B972CB0213500A50884 /* HelpersLibrary in Frameworks */,
+				C6168B372CA80E1500A50884 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +83,7 @@
 			children = (
 				C6168B1F2CA80D8400A50884 /* SupabaseDemo */,
 				C6168B1E2CA80D8400A50884 /* Products */,
+				C6168B732CA98A0C00A50884 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				C6168B202CA80D8400A50884 /* SupabaseDemoApp.swift */,
-				C6168B222CA80D8400A50884 /* ContentView.swift */,
+				C6168B8B2CAEB97900A50884 /* Supasbase */,
+				C6168B672CA97D8500A50884 /* Model */,
+				C6168B662CA97D7E00A50884 /* Views */,
+				C6168B862CAC2E0700A50884 /* old */,
 				C6168B242CA80D8600A50884 /* Assets.xcassets */,
 				C6168B292CA80D8600A50884 /* SupabaseDemo.entitlements */,
 				C6168B262CA80D8600A50884 /* Preview Content */,
@@ -67,6 +116,59 @@
 				C6168B272CA80D8600A50884 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6168B662CA97D7E00A50884 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6168B222CA80D8400A50884 /* ContentView.swift */,
+				C6168B7E2CA9AB5E00A50884 /* BookListView.swift */,
+				C6168B802CA9AC3800A50884 /* BookEditView.swift */,
+				C6168B822CA9B0D900A50884 /* AuthorsListView.swift */,
+				C6168B842CA9B1A400A50884 /* AuthorEditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6168B672CA97D8500A50884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6168B912CB004E200A50884 /* Model protocol.swift */,
+				C6168B932CB018AA00A50884 /* ObservedResults.swift */,
+				C6168B692CA97DA700A50884 /* Book.swift */,
+				C6168B6D2CA980DB00A50884 /* Author.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6168B732CA98A0C00A50884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6168B862CAC2E0700A50884 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				C6168B782CA9A41B00A50884 /* BooksVM.swift */,
+				C6168B7A2CA9A90200A50884 /* AuthorsVM.swift */,
+				C6168B762CA98B7B00A50884 /* BookVM.swift */,
+				C6168B7C2CA9A9BC00A50884 /* AuthorVM.swift */,
+			);
+			path = old;
+			sourceTree = "<group>";
+		};
+		C6168B8B2CAEB97900A50884 /* Supasbase */ = {
+			isa = PBXGroup;
+			children = (
+				C6168B6F2CA989DF00A50884 /* Secrets.swift */,
+				C6168B712CA989F400A50884 /* AuthVM.swift */,
+				C6168B872CAC653400A50884 /* AuthView.swift */,
+				C6168B8C2CAEB9C500A50884 /* SubscriptionManager.swift */,
+				C6168B982CB148A200A50884 /* SubscriptionBroadcast.swift */,
+			);
+			path = Supasbase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +187,16 @@
 			dependencies = (
 			);
 			name = SupabaseDemo;
+			packageProductDependencies = (
+				C6168B302CA80E1500A50884 /* Auth */,
+				C6168B322CA80E1500A50884 /* Functions */,
+				C6168B342CA80E1500A50884 /* PostgREST */,
+				C6168B362CA80E1500A50884 /* Realtime */,
+				C6168B382CA80E1500A50884 /* Storage */,
+				C6168B742CA98A0C00A50884 /* Supabase */,
+				C6168B8F2CAEBB8000A50884 /* SwiftyJSON */,
+				C6168B962CB0213500A50884 /* HelpersLibrary */,
+			);
 			productName = SupabaseDemo;
 			productReference = C6168B1D2CA80D8400A50884 /* SupabaseDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +225,11 @@
 				Base,
 			);
 			mainGroup = C6168B142CA80D8400A50884;
+			packageReferences = (
+				C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				C6168B8E2CAEBB8000A50884 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C6168B952CB0213500A50884 /* XCRemoteSwiftPackageReference "HelpersLibrary" */,
+			);
 			productRefGroup = C6168B1E2CA80D8400A50884 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +257,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6168B232CA80D8400A50884 /* ContentView.swift in Sources */,
+				C6168B852CA9B1A400A50884 /* AuthorEditView.swift in Sources */,
+				C6168B702CA989DF00A50884 /* Secrets.swift in Sources */,
+				C6168B882CAC653400A50884 /* AuthView.swift in Sources */,
+				C6168B922CB004E200A50884 /* Model protocol.swift in Sources */,
 				C6168B212CA80D8400A50884 /* SupabaseDemoApp.swift in Sources */,
+				C6168B992CB148A200A50884 /* SubscriptionBroadcast.swift in Sources */,
+				C6168B832CA9B0D900A50884 /* AuthorsListView.swift in Sources */,
+				C6168B6E2CA980DB00A50884 /* Author.swift in Sources */,
+				C6168B812CA9AC3800A50884 /* BookEditView.swift in Sources */,
+				C6168B722CA989F400A50884 /* AuthVM.swift in Sources */,
+				C6168B6A2CA97DA700A50884 /* Book.swift in Sources */,
+				C6168B942CB018AA00A50884 /* ObservedResults.swift in Sources */,
+				C6168B7F2CA9AB5E00A50884 /* BookListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +470,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		C6168B8E2CAEBB8000A50884 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		C6168B952CB0213500A50884 /* XCRemoteSwiftPackageReference "HelpersLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisrohrer/HelpersLibrary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6168B302CA80E1500A50884 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		C6168B322CA80E1500A50884 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		C6168B342CA80E1500A50884 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		C6168B362CA80E1500A50884 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		C6168B382CA80E1500A50884 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		C6168B742CA98A0C00A50884 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		C6168B8F2CAEBB8000A50884 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B8E2CAEBB8000A50884 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C6168B962CB0213500A50884 /* HelpersLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6168B952CB0213500A50884 /* XCRemoteSwiftPackageReference "HelpersLibrary" */;
+			productName = HelpersLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6168B152CA80D8400A50884 /* Project object */;
 }
