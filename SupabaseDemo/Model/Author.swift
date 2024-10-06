@@ -6,17 +6,17 @@
 //
 
 import Foundation
+import MyMacro
 
+@SynthCodable
 struct Author: Model {
     
-    
-    static let tableName = "Authors"
-    static let fetchRelations = "*, Books(*)"
+    static let tableName = "Author"
+    static let relations = ["Book", "Country"]
 
-    internal init(name: String, birthyear: Int, books: [Book] = []) {
+    internal init(name: String, birthyear: Int) {
         self.name = name
         self.birthyear = birthyear
-        self.books = books
     }
 
     var id: Int?
@@ -24,23 +24,29 @@ struct Author: Model {
     var name: String
     var birthyear: Int
     
+    // Foreign Keys
+    
+    @ForeignKey var countryId: Int?
+
     // Relations
     
-    var books: [Book]
+    @Relation var books: [Book] = []
+    @Relation var country: Country?
+
     
-    
-    
-    
+    /*
     // MARK: - Custom Encoding and Decoding
     
     enum DecodingKeys: String, CodingKey {
         case id, name, birthyear
         case createdAt = "created_at"
+        case countryId = "country_id"
         case books = "Books"
     }
     enum EncodingKeys: String, CodingKey {
         case id, name, birthyear
         case createdAt = "created_at"
+        case countryId = "country_id"
 //        case books = "Books"
     }
 
@@ -49,10 +55,11 @@ struct Author: Model {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: DecodingKeys.self)
         
-        id =            try container.decode(Int.self, forKey: .id)
+        id =            try container.decodeIfPresent(Int.self, forKey: .id)
         createdAt =     try container.decode(Date.self, forKey: .createdAt)
         name =          try container.decode(String.self, forKey: .name)
         birthyear =     try container.decode(Int.self, forKey: .birthyear)
+        countryId =     try container.decode(Int?.self, forKey: .countryId)
         
         books =         try container.decodeIfPresent([Book].self, forKey: .books) ?? []
     }
@@ -65,7 +72,9 @@ struct Author: Model {
         try container.encode(createdAt, forKey: .createdAt)
         try container.encode(name, forKey: .name)
         try container.encode(birthyear, forKey: .birthyear)
+        try container.encode(countryId, forKey: .countryId)
     }
+     */
 }
 
 

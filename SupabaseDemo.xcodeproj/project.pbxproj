@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,10 @@
 		C6168B942CB018AA00A50884 /* ObservedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B932CB018AA00A50884 /* ObservedResults.swift */; };
 		C6168B972CB0213500A50884 /* HelpersLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C6168B962CB0213500A50884 /* HelpersLibrary */; };
 		C6168B992CB148A200A50884 /* SubscriptionBroadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B982CB148A200A50884 /* SubscriptionBroadcast.swift */; };
+		C6168B9D2CB1894F00A50884 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B9C2CB1894F00A50884 /* Country.swift */; };
+		C6168B9F2CB189F500A50884 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168B9E2CB189F500A50884 /* CountriesListView.swift */; };
+		C6168BA12CB196A100A50884 /* CountryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6168BA02CB196A100A50884 /* CountryEditView.swift */; };
+		C6168BAD2CB2C8E600A50884 /* MyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = C6168BAC2CB2C8E600A50884 /* MyMacro */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,10 +57,13 @@
 		C6168B822CA9B0D900A50884 /* AuthorsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorsListView.swift; sourceTree = "<group>"; };
 		C6168B842CA9B1A400A50884 /* AuthorEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorEditView.swift; sourceTree = "<group>"; };
 		C6168B872CAC653400A50884 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		C6168B8C2CAEB9C500A50884 /* SubscriptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionManager.swift; path = SupabaseDemo/Supasbase/SubscriptionManager.swift; sourceTree = SOURCE_ROOT; };
+		C6168B8C2CAEB9C500A50884 /* SubscriptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubscriptionManager.swift; path = SupabaseDemo/old/SubscriptionManager.swift; sourceTree = SOURCE_ROOT; };
 		C6168B912CB004E200A50884 /* Model protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model protocol.swift"; sourceTree = "<group>"; };
 		C6168B932CB018AA00A50884 /* ObservedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedResults.swift; sourceTree = "<group>"; };
 		C6168B982CB148A200A50884 /* SubscriptionBroadcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionBroadcast.swift; sourceTree = "<group>"; };
+		C6168B9C2CB1894F00A50884 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C6168B9E2CB189F500A50884 /* CountriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
+		C6168BA02CB196A100A50884 /* CountryEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 				C6168B752CA98A0C00A50884 /* Supabase in Frameworks */,
 				C6168B312CA80E1500A50884 /* Auth in Frameworks */,
 				C6168B392CA80E1500A50884 /* Storage in Frameworks */,
+				C6168BAD2CB2C8E600A50884 /* MyMacro in Frameworks */,
 				C6168B972CB0213500A50884 /* HelpersLibrary in Frameworks */,
 				C6168B372CA80E1500A50884 /* Realtime in Frameworks */,
 			);
@@ -126,6 +134,8 @@
 				C6168B802CA9AC3800A50884 /* BookEditView.swift */,
 				C6168B822CA9B0D900A50884 /* AuthorsListView.swift */,
 				C6168B842CA9B1A400A50884 /* AuthorEditView.swift */,
+				C6168B9E2CB189F500A50884 /* CountriesListView.swift */,
+				C6168BA02CB196A100A50884 /* CountryEditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 				C6168B932CB018AA00A50884 /* ObservedResults.swift */,
 				C6168B692CA97DA700A50884 /* Book.swift */,
 				C6168B6D2CA980DB00A50884 /* Author.swift */,
+				C6168B9C2CB1894F00A50884 /* Country.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 		C6168B862CAC2E0700A50884 /* old */ = {
 			isa = PBXGroup;
 			children = (
+				C6168B8C2CAEB9C500A50884 /* SubscriptionManager.swift */,
 				C6168B782CA9A41B00A50884 /* BooksVM.swift */,
 				C6168B7A2CA9A90200A50884 /* AuthorsVM.swift */,
 				C6168B762CA98B7B00A50884 /* BookVM.swift */,
@@ -165,7 +177,6 @@
 				C6168B6F2CA989DF00A50884 /* Secrets.swift */,
 				C6168B712CA989F400A50884 /* AuthVM.swift */,
 				C6168B872CAC653400A50884 /* AuthView.swift */,
-				C6168B8C2CAEB9C500A50884 /* SubscriptionManager.swift */,
 				C6168B982CB148A200A50884 /* SubscriptionBroadcast.swift */,
 			);
 			path = Supasbase;
@@ -196,6 +207,7 @@
 				C6168B742CA98A0C00A50884 /* Supabase */,
 				C6168B8F2CAEBB8000A50884 /* SwiftyJSON */,
 				C6168B962CB0213500A50884 /* HelpersLibrary */,
+				C6168BAC2CB2C8E600A50884 /* MyMacro */,
 			);
 			productName = SupabaseDemo;
 			productReference = C6168B1D2CA80D8400A50884 /* SupabaseDemo.app */;
@@ -229,6 +241,7 @@
 				C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 				C6168B8E2CAEBB8000A50884 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				C6168B952CB0213500A50884 /* XCRemoteSwiftPackageReference "HelpersLibrary" */,
+				C6168BAB2CB2C8E600A50884 /* XCLocalSwiftPackageReference "../MyMacro" */,
 			);
 			productRefGroup = C6168B1E2CA80D8400A50884 /* Products */;
 			projectDirPath = "";
@@ -261,14 +274,17 @@
 				C6168B702CA989DF00A50884 /* Secrets.swift in Sources */,
 				C6168B882CAC653400A50884 /* AuthView.swift in Sources */,
 				C6168B922CB004E200A50884 /* Model protocol.swift in Sources */,
+				C6168B9F2CB189F500A50884 /* CountriesListView.swift in Sources */,
 				C6168B212CA80D8400A50884 /* SupabaseDemoApp.swift in Sources */,
 				C6168B992CB148A200A50884 /* SubscriptionBroadcast.swift in Sources */,
 				C6168B832CA9B0D900A50884 /* AuthorsListView.swift in Sources */,
 				C6168B6E2CA980DB00A50884 /* Author.swift in Sources */,
 				C6168B812CA9AC3800A50884 /* BookEditView.swift in Sources */,
 				C6168B722CA989F400A50884 /* AuthVM.swift in Sources */,
+				C6168BA12CB196A100A50884 /* CountryEditView.swift in Sources */,
 				C6168B6A2CA97DA700A50884 /* Book.swift in Sources */,
 				C6168B942CB018AA00A50884 /* ObservedResults.swift in Sources */,
+				C6168B9D2CB1894F00A50884 /* Country.swift in Sources */,
 				C6168B7F2CA9AB5E00A50884 /* BookListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +487,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		C6168BAB2CB2C8E600A50884 /* XCLocalSwiftPackageReference "../MyMacro" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MyMacro;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		C6168B2F2CA80E1500A50884 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -538,6 +561,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C6168B952CB0213500A50884 /* XCRemoteSwiftPackageReference "HelpersLibrary" */;
 			productName = HelpersLibrary;
+		};
+		C6168BAC2CB2C8E600A50884 /* MyMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyMacro;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

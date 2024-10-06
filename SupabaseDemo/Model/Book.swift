@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import MyMacro
 
+
+@SynthCodable
 struct Book: Model {
     
-    static let tableName = "Books"
-    static let fetchRelations = "*, Authors(*)"
+    static let tableName = "Book"
+    static let relations = ["Author"]
 
     
     internal init(title: String, pages: Int, authorId: Int? = nil, author: Author? = nil) {
@@ -26,16 +29,19 @@ struct Book: Model {
     var createdAt: Date = .now
     var title: String
     var pages: Int
-    var authorId: Int?
+    
+    // Foreign Keys
+    
+    @ForeignKey var authorId: Int?
     
     // Relations
     
-    var author: Author?
+    @Relation var author: Author?
     
     
     
     
-    
+    /*
     // MARK: - Custom Encoding and Decoding
 
     enum DecodingKeys: String, CodingKey {
@@ -74,6 +80,7 @@ struct Book: Model {
         try container.encode(pages, forKey: .pages)
         try container.encode(authorId, forKey: .authorId)
     }
+     */
 }
 
 

@@ -58,7 +58,10 @@ struct AuthorCellView: View {
         VStack(alignment: .leading) {
             Text(author.name)
                 .font(.headline)
-            Text(author.birthyear.formatted())
+            HStack {
+                Text(author.birthyear.formatted())
+                Text(author.country?.name ?? "?")
+            }
                 .font(.subheadline)
 //            Text(author?.name ?? "?")
 //                .font(.subheadline)

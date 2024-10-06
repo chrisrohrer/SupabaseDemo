@@ -12,7 +12,9 @@ struct AuthorEditView: View {
     
     var author: Author? = nil
     
-    @State private var inputAuthor = Author(name: "", birthyear: 1900, books: [])
+    @ObservedResults<Country> var countries
+
+    @State private var inputAuthor = Author(name: "", birthyear: 1900)
     
     @Environment(\.dismiss) private var dismiss
 
@@ -24,6 +26,15 @@ struct AuthorEditView: View {
                     TextField("Geburtsjahr", value: $inputAuthor.birthyear, formatter: NumberFormatter())
                 }
                 
+                Section("Country") {
+                    Picker("Country", selection: $inputAuthor.countryId) {
+                        Text("no Country").tag(nil as Int?)
+                        ForEach(countries) { country in
+                            Text(country.name).tag(country.id as Int?)
+                        }
+                    }
+                }
+
                 Section("Bücher") {
                     ForEach(author?.books ?? []) { book in
                         Text(book.title)

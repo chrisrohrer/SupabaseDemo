@@ -12,7 +12,7 @@ import Realtime
 protocol Model: Codable, Identifiable, Hashable {
     
     static var tableName: String { get }        // To differentiate between models
-    static var fetchRelations: String { get }   // Fetch string for all elements with relations
+    static var relations: [String] { get }   // Array of string Names for all tables with relations
 
     var id: Int? { get set }
 
@@ -24,15 +24,49 @@ protocol Model: Codable, Identifiable, Hashable {
 }
 
 
+@propertyWrapper
+struct Relation<Value>: Equatable, Hashable 
+where Value: Hashable, Value: Equatable {
+//    static func == (lhs: Relation<Value>, rhs: Relation<Value>) -> Bool {
+//        lhs.wrappedValue == rhs.wrappedValue
+//    }
+    
+    var wrappedValue: Value
+
+    init(wrappedValue: Value) {
+        self.wrappedValue = wrappedValue
+    }
+}
+
+@propertyWrapper
+struct ForeignKey<Value>: Equatable, Hashable
+where Value: Hashable, Value: Equatable {
+    var wrappedValue: Value
+
+    init(wrappedValue: Value) {
+        self.wrappedValue = wrappedValue
+    }
+}
+
+
+
 extension Model {
     
     // MARK: - fetch
+    
+    // create fecth string from relations
+    static var fetchRelations: String {
+        let result = relations.reduce("*") { $0 + ", \($1)(*)"}
+        print(result)
+        return result
+    }
+    
     
     static func fetchAll(sort: String?) async -> [Self] {
         do {
             let result: [Self] = try await supabase
                 .from(Self.tableName)
-                .select(Self.fetchRelations)
+                .select(fetchRelations)
                 .order(sort ?? "created_at", ascending: true)
                 .execute()
                 .value
@@ -50,7 +84,7 @@ extension Model {
         do {
             let result: [Self] = try await supabase
                 .from(Self.tableName)
-                .select(Self.fetchRelations)
+                .select(fetchRelations)
                 .eq("id", value: id)
                 .execute()
                 .value

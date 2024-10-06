@@ -12,6 +12,7 @@ struct ContentView: View {
     enum Ansicht {
         case books
         case authors
+        case countries
     }
     
     @State private var ansicht: Ansicht = .books
@@ -23,6 +24,8 @@ struct ContentView: View {
                 BookListView()
             case .authors:
                 AuthorListView()
+            case .countries:
+                CountriesListView()
             }
         }
         .toolbar {
@@ -30,12 +33,13 @@ struct ContentView: View {
                 Picker("Ansicht", selection: $ansicht) {
                     Text("Autoren").tag(Ansicht.authors)
                     Text("Bücher").tag(Ansicht.books)
+                    Text("Länder").tag(Ansicht.countries)
                 }
                 .pickerStyle(.segmented)
             }
             
-            ToolbarItemGroup {
-                Button("Create Data") {
+//            ToolbarItemGroup {
+//                Button("Create Data") {
 //                    for author in authorsVM.items {
 //                        for nr in 1..<10 {
 //                            Task {
@@ -43,14 +47,14 @@ struct ContentView: View {
 //                            }
 //                        }
 //                    }
-                }
-                Button("Delete") {
+//                }
+//                Button("Delete") {
 //                    booksVM.items
 //                        .filter { $0.title.contains("Testbuch") }
 //                        .compactMap { $0.id }
 //                        .forEach { booksVM.delete(id: $0) }
-                }
-            }
+//                }
+//            }
         }
     }
     

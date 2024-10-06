@@ -71,18 +71,26 @@ final class CloudResults<T: Model>: ObservableObject {
 
             
         case .update(let table, let record):
-            guard table == T.tableName else { return }
-            print("*** update", T.self, record["id"] as Any)
-
-            Task {
-                if let recordId = record["id"]?.intValue,
-                   let record = await T.fetchById(recordId) {
-                    if let index = self.items.firstIndex(where: { $0.id == recordId }) {
-                        DispatchQueue.main.async {
-                            self.items[index] = record
+            if table == T.tableName {
+                print("*** update", T.self, record["id"] as Any)
+                
+                Task {
+                    if let recordId = record["id"]?.intValue,
+                       let record = await T.fetchById(recordId) {
+                        if let index = self.items.firstIndex(where: { $0.id == recordId }) {
+                            DispatchQueue.main.async {
+                                self.items[index] = record
+                            }
                         }
                     }
                 }
+            } else if T.relations.contains(table) {
+                print("*** update Relations", T.self, record["id"] as Any)
+                
+                Task {
+                    await fetchData()
+                }
+
             }
 
         case .delete(let table, let oldRecord):
